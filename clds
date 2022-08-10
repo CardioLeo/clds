@@ -9,7 +9,7 @@
 
 # realpath was suggested, how do I use it?
 
-read input &&
+read -p "Enter your path:" input
 cd $input &&
 ls -a
 

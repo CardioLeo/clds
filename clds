@@ -6,9 +6,12 @@
 # Description: Combines the two commands, "cd" and "ls -a". This seemed necessary because it wasn't possible to use the same things as an alias - apparently?
 # Usage: clds
 
-~=$HOME
+
+# realpath was suggested, how do I use it?
+
 read input
-cd $input
+$mypath="realpath+input"
+cd $mypath
 ls -a
 
 exit 0

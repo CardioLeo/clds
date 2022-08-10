@@ -10,8 +10,7 @@
 # realpath was suggested, how do I use it?
 
 read input
-$mypath="realpath+input"
-cd $mypath
+cd $PATH
 ls -a
 
 exit 0

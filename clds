@@ -9,8 +9,8 @@
 
 # realpath was suggested, how do I use it?
 
-read input
-cd $PATH
+read input &&
+cd $input &&
 ls -a
 
 exit 0

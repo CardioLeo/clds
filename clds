@@ -6,8 +6,7 @@
 # Description: Combines the two commands, "cd" and "ls -a". This seemed necessary because it wasn't possible to use the same things as an alias - apparently?
 # Usage: clds
 
-#
-
+~=$HOME
 read input
 cd $input
 ls -a

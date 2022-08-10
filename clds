@@ -8,9 +8,10 @@
 
 #
 
-cd read && /
+read input
+cd $input
 ls -a
 
 exit 0
 
-# Well, so far, after a number of changes, this script doesn't work, but only shows items from the home directory. What does that mean? That cd isn't accepting input before the ls-a command runs?
+# I think I fixed one of the bugs; but now it won't take me back to ~/ hum hum

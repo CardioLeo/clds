@@ -3,16 +3,13 @@
 # Author: William Z Chadwick
 # Date Created: 08/06/2022
 # Date Modified:
-# Description: Combines the two commands, "cd" and "ls -a". This seemed necessary because it wasn't possible to use the same things as an alias - apparently?
+# Description: Combines the two commands, "cd" and "ls -a". Current cmd makeup helpfully suggested by Sara Kuenzi for ZSH; we'll see if it will work for bash.
 # Usage: clds
 
-
-# realpath was suggested, how do I use it?
-
-read -p "Enter your path:" input
-cd $input &&
-ls -a
-
+cd /$1 && ls -a
 exit 0
 
-# I think I fixed one of the bugs; but now it won't take me back to ~/ hum hum
+# old code attempts:
+# realpath was suggested, how do I use it?
+# read -p "Enter your path:" input
+# cd $input ls -a
